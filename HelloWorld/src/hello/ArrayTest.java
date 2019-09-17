@@ -8,11 +8,7 @@ public class ArrayTest {
 		
 		int [] intAry = new int[5];
 				intAry[5]=sc.nextInt(c);
-
-		
-		
-		
-		
+						
 		Scanner sc = new Scanner(System.in);
 		System.out.println("input int type");
 		int a = sc.nextInt();
