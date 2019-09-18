@@ -21,20 +21,38 @@ public class Exercise09 {
 			if (selectNo == 1) {
 				
 				System.out.println("학생수 > " );
+				
 				studentNum = sc.nextInt();
 				 scores  = new int[studentNum];
+				 
+				 
 			} else if (selectNo ==2 ) {
 				System.out.println("점수 > " );
 				for (int i = 0; i <scores.length; i++) {
+					System.out.println("scores["+i+"]>");
 					scores[i] = sc.nextInt();
 					
 				}
 				
 			} else if (selectNo == 3 ) {
-				System.out.println();
+				for (int i = 0;i<scores.length; i++) {
+					System.out.println("scores["+i+"]:" +scores[i]);
+				}
+				
+				
 				
 			} else if (selectNo == 4 ) {
-				
+			int maxValue=0, sum=0;
+			double avg = 0.0;
+			for (int i=0;i<scores.length; i++) {
+				maxValue = (maxValue>scores[i] ? maxValue : scores[i]);
+				sum +=scores[i];
+			}
+			avg = (double) sum/ scores.length;
+			System.out.println("최대값은: " + maxValue);
+			System.out.printf("평균: %.3f", avg);
+			System.out.println();	
+	
 			} else if (selectNo == 5 ) {
 				run = false;
 				
