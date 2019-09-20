@@ -7,8 +7,10 @@ public class Mathrandom {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("????/");
 		int mon = sc.nextInt();
-		showCal(mon);
-
+		
+		
+	
+		
 	}
 
 	public static void showCal(int mon) {
