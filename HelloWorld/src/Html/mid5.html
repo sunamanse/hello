@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+
+	
+	
+</head>
+<body>
+
+<script>
+
+	document.write("<table border='1'><tr>");
+
+	for(i=1; i<=9; i++) {
+		document.write("<th> <b>"+ i +"단"+"</th>");
+		
+	}document.write("</tr>");
+		
+ 		for(x=1; x<=9; x++) {
+ 			document.write("<tr>");
+			for(y=1; y<=9; y++) {
+ 				document.write("<td>"+ y + "x" + x + "=" + x*y+"</td>");
+ 		}
+ 			document.write("</tr>");
+ 	}
+	document.write("</table>");
+	
+	</script>
+
+</body>
+</html>
